@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title> Nemium </title>
 </head>
-<body>
+<body >
+    <div id = "background"></div>
     <div>
             <p>VARIANTES DEL PROYECTO</p>
             <aside>
@@ -59,10 +61,13 @@
     </div>
 
     <header>
-        <h1>Curso esencial de HTML y CSS</h1>
+        <div class = "content">    
+        <section>
+        <h1 id = "h1">Curso esencial de HTML y CSS</h1>
         <p>
             Este es el inicio de tu carrera como Desarrollador Web, empezaras aprendiendo HTML y CSS para la creacion de contenidos, en el nivel 2 aprenderas de componentes y en el nivel 3 sobre layouts.
         </p>
+    </section>
     </header>
     <section>
         <h2>Setup</h2>
@@ -76,7 +81,7 @@
         <p>
             Visual Studio Code es el  <b> <i> editor de texto mas popular y potente del mercado actualmente</i></b> , su facil uso y la capacidad de extendero por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desenvuelve. 
         </p>
-
+        <br>
         <img src="assets/images/figma-black.png" alt="figma image">
         <h3 id = "Figma"><u>3. Figma</u></h3>
         <p>
@@ -91,20 +96,20 @@
         <br>
    
 
-        <q> &quot;Este es el inicio de tu carrera como Desarrollador Web &quot; <br> - Leonidas Esteban
-        </q>
+        <blockquote> &quot;Este es el inicio de tu carrera como Desarrollador Web &quot; <br> - Leonidas Esteban
+        </blockquote>
     </section>
-
+<section>
     <section>
-        <H2>Conceptos esenciales del Desarrollo Web</H2>
+        <h2>Conceptos esenciales del Desarrollo Web</H2>
         <br>
         <h3 id = "HTML"><u>1. Qué es el HTML</u></h3>
         <p>
             Hyper Text Markup Language o Lenguaje de marcas de Hipertexto. Es el componene más basico web. Define el significado y la estructura del contenido.
         </p>
 
-        <pre>
-            <code>
+        <pre id = "code" >
+            <code id = "text-code">
                     &#60;!DOCTYPE html&#62;
                     &#60;html lang="en"&#62;
                     &#60;head&#62;
@@ -133,11 +138,15 @@
         <p>
             El Document Object Model es una estructura de árbl que representará todos nuestros proyectos, como si un árbol genealógico gfuera: padres, hijos, hermanos con niveles infinitos. Cuando entendemos esta anidación, podremos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto. 
         </p>
-        <img src="assets/images/dom-black.jpg" alt="dom">
+        <img class = "dom" src="assets/images/dom-black.jpg" alt="dom">
+
+        <br>
         <h3 id = "Semántica"><u>4. Semántica</u></h3>
         <p>
             La semántica le brinda sentido a cada elemento existente en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferentes jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de busqueda como Google y Duck Duck Go a diferenciara tu contenido, categorizar y será la herramienta más valiosa para estar en los primeros resultados de la búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con diferentes habilidades puedan entender cada contenido. 
         </p>
+        <br>
+        <br>
         <h3 id = "Atributos"><u>5. Atributos</u></h3>
         <p>
            Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como 'class' pero otros atributos funcionan en solo algunas etiquetas como src.
@@ -146,7 +155,7 @@
         <p>
             Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje d estilos utilizado para describir la presentación de documentos HTML.
         </p>
-        <img src="assets/images/css-black.jpg" alt="css">
+        <img id = "css-black" src="assets/images/css-black.jpg" alt="css">
     </section>
 
     <section>
@@ -178,14 +187,14 @@
             <li> border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end </li>> 
             <li> padding-block | padding-inline | padding-block-start | padding-bloxk-end | padding- inline-start | padding-inline- end</li></li>
         </ul>
-
+s
         <h3>Modelo de caja</h3>
         imagen
 
-        <p>Si tienes alguna duda escribeme a <u>me&#64;leonidasesteban.com </u></p>
+        <p>Si tienes alguna duda escribeme a <a href="mailto:me@leonidasesteban.com"><u>me&#64;leonidasesteban.com </u></a></p>
     </section>
-
-        <section>
+</section>
+        <section class = "suscribete">
             <h3>Suscribete a nuestro newsletter</h3>
             <form>
                 <input type="text" placeholder="Nombre">
@@ -194,14 +203,12 @@
             </form>
     
         </section>
-
-        <footer>
-            <span>
-                <p> &copy; Leonidas Esteban 2021</p>
+    </div>
+        <footer class = "footer">
+            <span >
+                <p id = "copy"> &copy; Leonidas Esteban 2021</p>
             </span>
         
         </footer>
-
-
 </body>
 </html>
